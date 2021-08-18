@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h5 {
+    
+    margin : 0rem;
+}
+/* For Navigation Bar */
+.nav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+}
+
+.nav .imgBox img {
+    width: auto;
+    height: 50px;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.nav .navigation {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav .navigation li {
+    margin: 0px 10px;
+    padding: 10px 20px;
+    background-color: #70C057;
+    border-radius: 5px;
+}
+
+.nav .navigation li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* For Masthead */
+.masthead {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masthead .backimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/value.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(40%);
+}
+
+.masthead .quote {
+    background: #ffffff24;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    text-align: justify;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+/* main content */
+.mainContent {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 80rem;
+}
+
+.mainContent .articals {
+    position: relative;
+}
+
+.mainContent .articals .articalInner {
+    display: flex;
+}
+
+.mainContent .articals .articalInner .textbox {
+    width: 60%;
+    position: relative;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mainContent .articals .articalInner .imgbox {
+    width: 40%;
+    margin: 30px;
+}
+
+.mainContent .articals .articalInner .imgbox img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mainContent .articals .articalInner .imgbox figcaption {
+    text-align: center;
+}
+
+.mainContent .articals hr {
+    margin-top: 5rem;
+}
+
+.mainContent .portfolio {
+    position: relative;
+}
+
+.mainContent .portfolio .imageBox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    row-gap: 100px;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.mainContent .portfolio .imageBox .card {
+    text-align: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.mainContent .portfolio .imageBox .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.mainContent .portfolio .imageBox .card figcaption {
+    margin-top: 10px;
+}
+
+/* for Footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    max-width: 80rem;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.footer .links {
+    display: inline-flex;
+    gap: 30px;
+}
+
+
+@media (max-width: 80rem) {
+    .nav {
+        display: block;
+        position: fixed;
+        text-align: center;
+        height: 150px;
+        padding-top: 20px;
+        position: relative;
+    }
+    .nav .navigation {
+        padding-left: 0;
+    }
+
+    .nav .navigation li {
+        width: 100%;
+    }
+
+
+
+    .mainContent .articals .articalInner {
+        display: block;
+        position: relative;
+    }
+
+    .mainContent .articals .articalInner .textbox {
+        width: 100%;
+    }
+
+    .mainContent .articals .articalInner .imgbox {
+        float: left;
+    }
+
+    .mainContent .portfolio h1 {
+        text-align: center;
+    }
+
+
+    .mainContent .portfolio .imageBox {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width: 35rem) {
+    .nav {
+        padding: 0 25px;
+        padding-top: 20px;
+        height: 200px;
+    }
+
+    .nav .navigation {
+        display: block;
+    }
+
+    .nav .navigation li {
+        margin-top: 10px;
+    }
+
+    .mainContent .articals .articalInner .imgbox {
+        width: 100%;
+        margin: 0px;
+    }
+
+
+    .mainContent .portfolio .imageBox {
+        grid-template-columns: auto;
+    }
+}
